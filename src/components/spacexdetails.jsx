@@ -86,7 +86,7 @@ function SpacexDetails() {
 >
   {showLanding 
     ? (data.cores[0].landing_success ? '✅ Successful Landing' : '❌ Landing Failed') 
-    : '🔍 Click to Reveal Landing Status'}
+    : ' Click to Reveal Landing Status'}
 </p>
       {/* 🎬 YouTube Preview Section */}
       <div className="flex flex-col items-center justify-center mt-3 bg-amber-100">
