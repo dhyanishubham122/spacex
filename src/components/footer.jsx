@@ -3,10 +3,10 @@ import React from 'react'
 function footer() {
   return (
    <>
-   <footer className="bg-black text-white text-center py-6  shadow-lg ">
+   <footer className="bg-black text-white text-center py-6 mt-2  shadow-lg ">
   <div className="container mx-auto px-6">
-    <h2 className="text-2xl md:text-3xl font-bold text-[#1c4fae] transition-transform transform hover:scale-105">
-      🚀 Thanks for this Opportunity!
+    <h2 className="text-2xl mt-6 md:text-3xl font-bold text-[#1c4fae] transition-transform transform hover:scale-105">
+       Thanks for this Opportunity!
     </h2>
     <p className="text-lg md:text-xl mt-2 text-gray-300">
       Crafted with dedication by <span className="font-semibold text-[#1c4fae]">Shubham</span>

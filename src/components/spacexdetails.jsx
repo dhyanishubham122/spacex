@@ -134,25 +134,26 @@ function SpacexDetails() {
     {new Date(data.date_utc).toLocaleDateString()}
   </p>
 
-  <div className="flex flex-col md:flex-row justify-between items-center w-full bg-gray-900 text-white p-4 rounded-lg shadow-lg mt-4 transition-all duration-300 hover:bg-gray-700">
-    
-    <p className="text-xl md:text-2xl font-semibold flex items-center gap-3 transition-colors duration-300 hover:text-blue-400">
+  <div className="w-full max-w-screen-lg mx-auto">
+  <div className="flex flex-col md:flex-row justify-between items-center w-full bg-gray-900 text-white p-4 rounded-lg shadow-lg mt-4 transition-all duration-300 hover:bg-gray-700 gap-y-3">
+    <p className="text-lg sm:text-xl md:text-2xl font-semibold flex items-center gap-3 transition-colors duration-300 hover:text-blue-400">
       Rocket Used: <span className="text-blue-500">{data.rocket}</span>
     </p>
-    <p className="text-xl md:text-2xl font-semibold flex items-center gap-3 transition-colors duration-300 hover:text-green-400 mt-3 md:mt-0">
-       Crew Members: <span className="text-blue-500">{data.crew.length}</span>
+    <p className="text-lg sm:text-xl md:text-2xl font-semibold flex items-center gap-3 transition-colors duration-300 hover:text-green-400">
+      Crew Members: <span className="text-blue-500">{data.crew.length}</span>
     </p>
   </div>
-  <div className="flex flex-col md:flex-row justify-between items-center w-full bg-gray-900 text-white p-4 rounded-lg shadow-lg mt-4 transition-all duration-300 hover:bg-gray-700">
-    
-    <p className="text-xl md:text-2xl font-semibold flex items-center gap-3 transition-colors duration-300 hover:text-blue-400">
-    landpad: <span className="text-blue-500">{data.cores[0].landpad}</span>
-    </p>
-    <p className="text-xl md:text-2xl font-semibold flex items-center gap-3 transition-colors duration-300 hover:text-green-400 mt-3 md:mt-0">
-    landing_type: <span className="text-blue-500">{data.cores[0].landing_type}</span>
-    </p>
 
+  <div className="flex flex-col md:flex-row justify-between items-center w-full bg-gray-900 text-white p-4 rounded-lg shadow-lg mt-4 transition-all duration-300 hover:bg-gray-700 gap-y-3">
+    <p className="text-lg sm:text-xl md:text-2xl font-semibold flex items-center gap-3 transition-colors duration-300 hover:text-blue-400">
+      Landpad: <span className="text-blue-500">{data.cores[0].landpad}</span>
+    </p>
+    <p className="text-lg sm:text-xl md:text-2xl font-semibold flex items-center gap-3 transition-colors duration-300 hover:text-green-400">
+      Landing Type: <span className="text-blue-500">{data.cores[0].landing_type}</span>
+    </p>
   </div>
+</div>
+
   
       <button
         onClick={() => setShowDetails(!showDetails)}
